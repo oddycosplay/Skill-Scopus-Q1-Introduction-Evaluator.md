@@ -1,143 +1,101 @@
-# Skill: Scopus Q1 Introduction Evaluator
+# Scopus Q1 Introduction Evaluator
 
 <div align="center">
-  <img alt="Status" src="https://img.shields.io/badge/status-ready%20for%20use-blue" />
-  <img alt="Type" src="https://img.shields.io/badge/type-academic%20skill-orange" />
-  <img alt="Language" src="https://img.shields.io/badge/language-Indonesian%20%2F%20English-green" />
-  <img alt="Focus" src="https://img.shields.io/badge/focus-Introduction%20chapter-purple" />
-  <img alt="License" src="https://img.shields.io/badge/license-open%20academic%20use-lightgrey" />
+  <img alt="status" src="https://img.shields.io/badge/status-ready%20for%20use-blue" />
+  <img alt="type" src="https://img.shields.io/badge/type-academic%20skill-orange" />
+  <img alt="focus" src="https://img.shields.io/badge/focus-introduction%20chapter-purple" />
+  <img alt="platforms" src="https://img.shields.io/badge/platforms-Claude%20%7C%20ChatGPT%20%7C%20Gemini%20CLI-lightgrey" />
 </div>
 
-Mengevaluasi Bab 1 Pendahuluan (Introduction) manuskrip ilmiah untuk jurnal bereputasi Scopus Q1 menggunakan pendekatan evaluasi yang terstruktur.
+Academic skill for evaluating the Introduction chapter of a manuscript intended for Scopus Q1 journal submission.
 
-## Deskripsi
+## Overview
 
-Skill ini dirancang untuk membantu penulis, peneliti, mahasiswa pascasarjana, dan reviewer dalam menilai kualitas Bab 1 Pendahuluan suatu manuskrip. Evaluasi difokuskan pada aspek-aspek utama yang biasanya menjadi perhatian dalam penerimaan naskah di jurnal internasional, khususnya yang berada pada standar Scopus Q1.
+This repository contains a custom skill designed to evaluate the Introduction chapter (Bab 1 Pendahuluan) of a scholarly manuscript using a structured review framework. The focus is on the main academic dimensions usually examined in high-quality journal reviews, especially for international journals with demanding standards.
 
-Skill ini dapat digunakan sebagai alat pendukung evaluasi akademik untuk membantu mengidentifikasi:
+The skill helps users assess whether the manuscript:
+- clearly presents the research problem
+- provides strong justification for the study
+- identifies the research gap convincingly
+- formulates clear research objectives
+- explains the contribution and significance of the study
 
-- kekuatan dan kelemahan latar belakang masalah
-- urgensi dan relevansi penelitian
-- gap penelitian yang belum terjawab
-- kualitas rumusan tujuan dan kontribusi penelitian
-- area perbaikan yang perlu diperbaiki sebelum pengiriman naskah
+## Purpose
 
-## Tujuan
+This skill is intended to support:
+- researchers
+- graduate students
+- academic authors
+- manuscript reviewers
+- early-stage journal preparation workflows
 
-Skill ini bertujuan untuk:
-
-- meningkatkan kualitas evaluasi Bab 1 Pendahuluan
-- membantu penulis mempersiapkan naskah sesuai standar jurnal bereputasi
-- mempercepat proses review awal pada aspek pendahuluan
-- memberikan rekomendasi perbaikan yang lebih terarah dan akademis
-
-## Fitur Utama
-
-- Evaluasi Bab 1 dengan pendekatan empat pertanyaan utama
-- Fokus pada konteks masalah, urgensi, gap, dan kontribusi
-- Dapat digunakan sebagai alat review awal sebelum submit jurnal
-- Cocok untuk artikel ilmiah dalam bidang sosial, pendidikan, kesehatan, teknologi, dan disiplin lain yang memerlukan pendekatan akademik formal
-
-## Struktur Repository
+## Repository Contents
 
 ```text
 Skill-Scopus-Q1-Introduction-Evaluator.md/
 ├── README.md
 ├── Scopus q1 intro evaluator-v1.zip
-└── LICENSE (jika ditambahkan di masa depan)
 ```
 
-## Persyaratan
+## Installation
 
-- Tersedia file paket skill/plugin dalam bentuk ZIP
-- Kompatibel dengan lingkungan yang mendukung custom skills/plugins
-- Untuk aplikasi yang tidak mendukung import langsung, pengguna dapat menyalin instruksi dan membuat konfigurasi custom GPT / extension / skill secara manual
+### Claude
 
-## Instalasi
+1. Download `Scopus q1 intro evaluator-v1.zip`.
+2. Extract the file to a local folder.
+3. Ensure the extracted package contains a valid plugin structure.
+4. Open the Claude environment that supports custom skills or plugins.
+5. Import or enable the skill.
+6. Start evaluating the Introduction chapter of the manuscript.
 
-### 1. Claude
+### ChatGPT
 
-1. Unduh file `Scopus q1 intro evaluator-v1.zip` dari repository ini.
-2. Ekstrak file ZIP ke folder lokal Anda.
-3. Pastikan hasil ekstraksi berisi struktur plugin yang valid, termasuk file `.claude-plugin/plugin.json`.
-4. Buka aplikasi Claude yang mendukung custom plugins/skills.
-5. Impor atau aktifkan plugin tersebut.
-6. Gunakan skill untuk mengevaluasi Bab 1 manuskrip Anda.
+1. Open ChatGPT Builder or create a new Custom GPT.
+2. Name the GPT as `Scopus Q1 Intro Evaluator`.
+3. Add academic evaluation instructions for reviewing the Introduction chapter.
+4. Save the GPT.
+5. Use the custom GPT to assess the manuscript.
 
-### 2. ChatGPT
+### AntiGravity / Gemini CLI
 
-1. Buka ChatGPT dan masuk ke area Custom GPT / GPT Builder.
-2. Buat GPT baru dengan nama `Scopus Q1 Intro Evaluator`.
-3. Salin instruksi evaluasi akademik ke dalam prompt system.
-4. Simpan GPT baru tersebut.
-5. Gunakan untuk mengevaluasi Bab 1 manuskrip secara interaktif.
+1. Download and extract the ZIP file.
+2. Copy the skill/plugin folder to the directory supported by the application.
+3. Activate the skill or extension in the app.
+4. Use it according to your research workflow.
 
-Contoh instruksi yang dapat digunakan:
+## Example Prompt
 
 ```text
-Anda adalah reviewer akademik yang mengevaluasi Bab 1 Pendahuluan manuskrip untuk jurnal Scopus Q1.
-Tinjau latar belakang masalah, urgensi penelitian, gap penelitian, tujuan penelitian, dan kontribusi ilmiah.
-Berikan penilaian, kritik konstruktif, dan rekomendasi perbaikan yang spesifik.
+Evaluate the Introduction chapter of my manuscript for a Scopus Q1 journal.
+Use the following four questions:
+1. Is the background of the problem clearly explained and relevant?
+2. Is the urgency of the study and the research gap clearly identified?
+3. Are the research objectives and questions clearly formulated?
+4. Is the contribution and significance of the study strongly justified?
+
+Provide an academic review, identify weaknesses, and suggest improvements.
 ```
 
-### 3. AntiGravity / Gemini CLI
+## Evaluation Focus
 
-1. Unduh dan ekstrak `Scopus q1 intro evaluator-v1.zip`.
-2. Salin folder skill/plugin hasil ekstraksi ke direktori extension / custom skill yang didukung oleh aplikasi.
-3. Aktifkan skill/extension dari aplikasi terkait.
-4. Gunakan sesuai dengan kebutuhan evaluasi Anda.
+This skill typically evaluates:
+- problem background
+- research urgency
+- conceptual and empirical gap
+- research objectives and questions
+- novelty and contribution
+- manuscript readiness for journal submission
 
-Catatan: lokasi direktori skill dapat berbeda tergantung versi aplikasi, sistem operasi, dan konfigurasi lokal Anda.
+## Important Note
 
-## Contoh Prompt Penggunaan
+This tool functions as an academic support assistant. Final evaluation should still be reviewed by a human researcher, supervisor, or reviewer to ensure alignment with the specific field and research context.
 
-```text
-Evaluasi Bab 1 Pendahuluan manuskrip saya untuk jurnal Scopus Q1.
-Gunakan empat pertanyaan utama berikut:
-1. Apakah latar belakang masalah dijelaskan dengan jelas dan relevan?
-2. Apakah urgensi penelitian dan gap penelitian diidentifikasi dengan cukup kuat?
-3. Apakah tujuan penelitian dan pertanyaan penelitian dirumuskan secara jelas?
-4. Apakah kontribusi dan signifikansi penelitian dijelaskan dengan baik?
+## License
 
-Berikan penilaian, rekomendasi perbaikan, dan kesimpulan akhir tentang kualitas pendahuluan manuskrip tersebut.
-```
-
-## Kriteria Evaluasi yang Umum Digunakan
-
-Skill ini umumnya mengevaluasi aspek berikut:
-
-1. Latar belakang masalah
-   - apakah konteks penelitian dijelaskan secara jelas?
-   - apakah masalah yang diteliti relevan dengan bidang studi?
-
-2. Urgensi penelitian
-   - apakah alasan pentingnya penelitian dijelaskan dengan cukup kuat?
-   - apakah ada bukti bahwa penelitian ini diperlukan?
-
-3. Gap penelitian
-   - apakah kekosongan penelitian telah diidentifikasi dengan jelas?
-   - apakah ada pembeda antara penelitian saat ini dan penelitian sebelumnya?
-
-4. Tujuan dan kontribusi
-   - apakah tujuan penelitian dinyatakan secara operasional?
-   - apakah kontribusi ilmiah dan manfaat penelitian dijelaskan dengan logis?
-
-## Catatan Penting
-
-Skill ini merupakan alat pendukung review akademik. Hasil evaluasi dapat membantu mempercepat proses analisis awal, tetapi tetap perlu ditinjau secara kritis oleh peneliti, dosen pembimbing, atau reviewer manusia agar sesuai dengan konteks dan metodologi penelitian yang spesifik.
-
-## Lisensi
-
-Repository ini tersedia untuk penggunaan akademik dan penelitian. Penggunaan komersial atau distribusi ulang dapat disesuaikan dengan kebijakan institusi dan kebutuhan pengguna.
-
-## Kontribusi
-
-Jika Anda ingin mengembangkan skill ini lebih lanjut, saran perbaikan atau kontribusi kode/instruksi sangat diterima. Silakan buka issue atau kirim pull request di repository ini.
-
-## Kontak
-
-Untuk pertanyaan atau kolaborasi, Anda dapat menghubungi pemilik repository melalui akun GitHub yang terkait.
+Academic and research use.
 
 ---
 
-Prepared for publication-quality GitHub repository presentation.
+<div align="center">
+  <img src="https://via.placeholder.com/1200x350.png?text=Academic+Review+Preview" alt="Academic Preview" width="100%" />
+</div>
